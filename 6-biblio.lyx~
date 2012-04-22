@@ -1088,6 +1088,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/biblio-chekout.png
+	scale 50
 
 \end_inset
 

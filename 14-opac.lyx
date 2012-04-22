@@ -1,21 +1,29 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass scrbook
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \float_placement H
 \paperfontsize default
 \spacing single
@@ -24,21 +32,31 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -227,6 +245,111 @@ XML Opac
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Untuk pencarian data bibliografi melalui pencarian sederhana (Simple Search)
+ dapat ditambahkan awalan kode ruas bibliografi untuk menciptakan alternatif
+ pencarian spesifik khususnya untuk pengguna yang sudah mahir.
+ Kode ruas bibliografi yang dapat digunakan adalah : author - untuk pengarang,
+ title - untuk judul, subject - untuk topik permasalahan, callnumber - untuk
+ nomor panggil.
+ Masing-masing ruas dapat dikombinasikan dengan menggunakan logika boolean
+ 
+\begin_inset Quotes eld
+\end_inset
+
+and, or, not
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Contoh pencarian spesifik dengan data contoh yang disediakan:
+\end_layout
+
+\begin_layout Itemize
+title = linux and author = jean 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+akan mencari data bibliografi dengan judul buku yang mengandung kata 
+\begin_inset Quotes eld
+\end_inset
+
+linux
+\begin_inset Quotes erd
+\end_inset
+
+ DAN pengarang yang mengandung nama 
+\begin_inset Quotes eld
+\end_inset
+
+jean
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+author = peter not subject = computer
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+akan mencari data bibliografi ditulis oleh pengarang yang mengandung nama
+ 
+\begin_inset Quotes eld
+\end_inset
+
+peter
+\begin_inset Quotes erd
+\end_inset
+
+ tetapi TIDAK termasuk topik/subjek 
+\begin_inset Quotes eld
+\end_inset
+
+computer
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Catatan:
+\end_layout
+
+\begin_layout Plain Layout
+Kotak utama pencarian pada tampilan opac untuk pencarian sederhana akan
+ berubah fungsi pada saat perubahan mode menjadi pencarian canggih.
+ Jika pada mode pencarian sederhana SLiMS akan mencari setiap kata yang
+ diketik dalam kotak tersebut untuk ruas judul, judul seri, catatan/abstrak,
+ pengarang, dan topik/subjek, maka pada pencarian canggih, kotak besar pencarian
+ utama hanya akan mencari kata tersebut pada ruas judul saja.
 \end_layout
 
 \end_inset
